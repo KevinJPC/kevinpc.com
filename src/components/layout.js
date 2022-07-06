@@ -19,6 +19,17 @@ const GlobalStyle = createGlobalStyle`
         scroll-padding-top: 4.4em;
     }
 
+    body {
+    min-height: 100vh;
+    min-height: fill-available;
+    min-height: -webkit-fill-available;
+    }
+    
+    html {
+        height: fill-available;
+        height: -webkit-fill-available;
+    }
+
 
     /* ===== Scrollbar CSS ===== */
     /* Firefox */
