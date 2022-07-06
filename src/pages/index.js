@@ -74,7 +74,11 @@ const IndexPage = () => {
     // define a function that sets min-height of my-element to window.innerHeight:
 
     const setHeight = () => {
-      document.getElementById("hero").style.minHeight = window.innerHeight + "px"
+      if(stateAnimation === 'idle'){
+        document.getElementById("hero").style.minHeight = (window.innerHeight - 70.4) + 'px'
+      }else {
+        document.getElementById("hero").style.minHeight = window.innerHeight + 'px'
+      }
     };
 
     // define mobile screen size:
@@ -99,7 +103,7 @@ const IndexPage = () => {
     if (projectsInView) setSection(sections.projects.url)
     if (contactInView) setSection(sections.contact.url)
 
-  }, [heroInView, aboutInView, skillsInView, projectsInView, contactInView])
+  }, [stateAnimation, heroInView, aboutInView, skillsInView, projectsInView, contactInView])
 
   return (
     <Layout>
@@ -117,10 +121,10 @@ const IndexPage = () => {
         ) : null}
 
         <ContainerSection stateAnimation={stateAnimation}>
-          <section id="hero" ref={heroRef}><Hero setStateAnimation={setStateAnimation} stateAnimation={stateAnimation} /></section>
+          <section ref={heroRef}><Hero id="hero" setStateAnimation={setStateAnimation} stateAnimation={stateAnimation} /></section>
           {stateAnimation === 'idle' ? (
             <>
-              <motion.section id="about" ref={aboutRef}><Reveal inView={aboutInView}><About id="about"/></Reveal></motion.section>
+              <motion.section id="about" ref={aboutRef}><Reveal inView={aboutInView}><About /></Reveal></motion.section>
               <motion.section id="skills" ref={skillsRef}><Reveal inView={skillsInView}><Skills /></Reveal></motion.section>
               <motion.section id="projects" ref={projectsRef}><Reveal inView={projectsInView}><Projects /></Reveal></motion.section>
               <motion.section id="contact" ref={contactRef}><Reveal inView={contactInView}><Contact /></Reveal></motion.section>

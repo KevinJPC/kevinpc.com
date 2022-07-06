@@ -6,11 +6,10 @@ import Animation from "@components/animation"
 
 const StyledHero = styled.div`
     /* height: ${props => props.stateAnimation === 'idle' ? 'calc((var(--vh, 1vh) * 100) - 4.4em)' : '100vh'}; */
-
+    
     /* height: -moz-available;         
     height: -webkit-fill-available;  
     height: fill-available; */
-    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -64,7 +63,7 @@ const StyledButton = styled.div`
 }
 `
 
-const Hero = ({ setStateAnimation, stateAnimation }) => {
+const Hero = ({ setStateAnimation, stateAnimation, ...props }) => {
 
     const variants = {
         visible: { y: 0, opacity: 1 },
@@ -72,7 +71,7 @@ const Hero = ({ setStateAnimation, stateAnimation }) => {
     }
 
     return (
-        <StyledHero stateAnimation={stateAnimation}>
+        <StyledHero stateAnimation={stateAnimation} {...props}>
             <Container>
                 <Animation setStateAnimation={setStateAnimation} />
                 {stateAnimation === 'idle' ? (
