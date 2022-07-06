@@ -79,14 +79,16 @@ const IndexPage = () => {
 
     // define mobile screen size:
     setHeight();
+  }, [stateAnimation])
 
+  useEffect(() => {
     if (heroInView) setSection(sections.hero.url)
     if (aboutInView) setSection(sections.about.url)
     if (skillsInView) setSection(sections.skills.url)
     if (projectsInView) setSection(sections.projects.url)
     if (contactInView) setSection(sections.contact.url)
 
-  }, [stateAnimation, heroInView, aboutInView, skillsInView, projectsInView, contactInView])
+  }, [heroInView, aboutInView, skillsInView, projectsInView, contactInView])
 
   return (
     <Layout>
