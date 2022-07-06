@@ -18,7 +18,7 @@ const GlobalStyle = createGlobalStyle`
     html {
         scroll-behavior: smooth;
         scroll-padding-top: 4.4em;
-        height: 100%;
+        ${'' /* height: 100%; */}
     }
 
     /* ===== Scrollbar CSS ===== */

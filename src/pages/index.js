@@ -60,6 +60,10 @@ const IndexPage = () => {
   }
 
   useEffect(() => {
+    // Fixing 100vh for mobile
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty(`–vh`, `${vh}px`);
+
     if (heroInView) setSection(sections.hero.url)
     if (aboutInView) setSection(sections.about.url)
     if (skillsInView) setSection(sections.skills.url)

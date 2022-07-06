@@ -5,16 +5,18 @@ import { motion } from "framer-motion"
 import Animation from "@components/animation"
 
 const StyledHero = styled.div`
-    height: ${props => props.stateAnimation === 'idle' ? '100vh' : '100vh'};
+    height: ${props => props.stateAnimation === 'idle' ? 'calc(var(--vh, 1vh) * 100)' : '100vh'};
 
-    height: -moz-available;          /* WebKit-based browsers will ignore this. */
-    height: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
-    height: fill-available;
+    /* height: -moz-available;         
+    height: -webkit-fill-available;  
+    height: fill-available; */
 
     display: flex;
     flex-direction: column;
     justify-content: center;
     border: 1px solid red;
+
+    
 `
 
 const Container = styled.div`
