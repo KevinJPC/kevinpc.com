@@ -5,7 +5,7 @@ import { motion } from "framer-motion"
 import Animation from "@components/animation"
 
 const StyledHero = styled.div`
-    height: ${props => props.stateAnimation === 'idle' ? 'calc((var(--vh, 1vh) * 100) - 4.4em)' : '100vh'};
+    /* height: ${props => props.stateAnimation === 'idle' ? 'calc((var(--vh, 1vh) * 100) - 4.4em)' : '100vh'}; */
 
     /* height: -moz-available;         
     height: -webkit-fill-available;  

@@ -74,7 +74,7 @@ const IndexPage = () => {
     // define a function that sets min-height of my-element to window.innerHeight:
 
     const setHeight = () => {
-      document.getElementById("my-element").style.minHeight = window.innerHeight + "px"
+      document.getElementById("hero").style.minHeight = window.innerHeight + "px"
     };
 
     // define mobile screen size:
@@ -120,7 +120,7 @@ const IndexPage = () => {
           <section id="hero" ref={heroRef}><Hero setStateAnimation={setStateAnimation} stateAnimation={stateAnimation} /></section>
           {stateAnimation === 'idle' ? (
             <>
-              <motion.section id="about" ref={aboutRef}><Reveal inView={aboutInView}><About /></Reveal></motion.section>
+              <motion.section ref={aboutRef}><Reveal inView={aboutInView}><About id="about"/></Reveal></motion.section>
               <motion.section id="skills" ref={skillsRef}><Reveal inView={skillsInView}><Skills /></Reveal></motion.section>
               <motion.section id="projects" ref={projectsRef}><Reveal inView={projectsInView}><Projects /></Reveal></motion.section>
               <motion.section id="contact" ref={contactRef}><Reveal inView={contactInView}><Contact /></Reveal></motion.section>
