@@ -5,17 +5,9 @@ import { motion } from "framer-motion"
 import Animation from "@components/animation"
 
 const StyledHero = styled.div`
-    /* height: ${props => props.stateAnimation === 'idle' ? 'calc((var(--vh, 1vh) * 100) - 4.4em)' : '100vh'}; */
-    
-    /* height: -moz-available;         
-    height: -webkit-fill-available;  
-    height: fill-available; */
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border: 1px solid red;
-
-    
 `
 
 const Container = styled.div`
@@ -71,7 +63,7 @@ const Hero = ({ setStateAnimation, stateAnimation, ...props }) => {
     }
 
     return (
-        <StyledHero stateAnimation={stateAnimation} {...props}>
+        <StyledHero {...props}>
             <Container>
                 <Animation setStateAnimation={setStateAnimation} />
                 {stateAnimation === 'idle' ? (

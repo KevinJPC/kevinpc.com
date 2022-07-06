@@ -42,6 +42,10 @@ const ContainerSection = styled.div`
   }
   margin: ${props => props.stateAnimation === 'idle' ? '4.4em' : '0'} auto;
 
+  section {
+    border: 1px solid red;
+  }
+
 `
 
 const IndexPage = () => {
@@ -63,18 +67,18 @@ const IndexPage = () => {
     // define a function that sets min-height of my-element to window.innerHeight:
 
     const setHeight = () => {
-      if(stateAnimation === 'idle'){
+      if (stateAnimation === 'idle') {
         document.getElementById("hero").style.minHeight = (window.innerHeight - 70.4) + 'px';
         document.getElementById("about").style.minHeight = (window.innerHeight - 70.4) + 'px';
         document.getElementById("skills").style.minHeight = (window.innerHeight - 70.4) + 'px';
         document.getElementById("projects").style.minHeight = (window.innerHeight - 70.4) + 'px';
-      }else {
+      } else {
         document.getElementById("hero").style.minHeight = window.innerHeight + 'px';
       }
     };
 
     // define mobile screen size:
-      setHeight();
+    setHeight();
 
     if (heroInView) setSection(sections.hero.url)
     if (aboutInView) setSection(sections.about.url)
@@ -103,10 +107,10 @@ const IndexPage = () => {
           <section ref={heroRef}><Hero id="hero" setStateAnimation={setStateAnimation} stateAnimation={stateAnimation} /></section>
           {stateAnimation === 'idle' ? (
             <>
-              <motion.section ref={aboutRef}><Reveal inView={aboutInView}><About id="about"/></Reveal></motion.section>
-              <motion.section ref={skillsRef}><Reveal inView={skillsInView}><Skills id="skills"/></Reveal></motion.section>
-              <motion.section ref={projectsRef}><Reveal inView={projectsInView}><Projects id="projects"/></Reveal></motion.section>
-              <motion.section ref={contactRef}><Reveal inView={contactInView}><Contact id="contact"/></Reveal></motion.section>
+              <motion.section ref={aboutRef}><Reveal inView={aboutInView}><About id="about" /></Reveal></motion.section>
+              <motion.section ref={skillsRef}><Reveal inView={skillsInView}><Skills id="skills" /></Reveal></motion.section>
+              <motion.section ref={projectsRef}><Reveal inView={projectsInView}><Projects id="projects" /></Reveal></motion.section>
+              <motion.section ref={contactRef}><Reveal inView={contactInView}><Contact id="contact" /></Reveal></motion.section>
             </>
           ) : null}
         </ContainerSection>
