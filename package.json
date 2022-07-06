@@ -15,8 +15,11 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
+    "@rive-app/react-canvas": "^3.0.8",
     "babel-plugin-styled-components": "^2.0.7",
+    "framer-motion": "^6.3.11",
     "gatsby": "^4.16.0",
+    "gatsby-plugin-alias-imports": "^1.0.5",
     "gatsby-plugin-google-analytics": "^4.16.0",
     "gatsby-plugin-image": "^2.16.1",
     "gatsby-plugin-manifest": "^4.16.0",
@@ -29,6 +32,8 @@
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "react-helmet": "^6.1.0",
+    "react-intersection-observer": "^9.3.4",
+    "react-tooltip": "^4.2.21",
     "styled-components": "^5.3.5"
   }
 }
