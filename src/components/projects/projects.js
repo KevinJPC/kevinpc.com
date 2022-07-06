@@ -6,9 +6,7 @@ import ProjectDetails from "@components/projects/projectDetails";
 import { device } from "@components/mediaqueries";
 
 
-const StyledProjects = styled.div`
-    min-height: calc(100vh - 4.4em);
-    height: auto;
+const StyledProjects = styled.div`  
 
     /* media queries */
     @media ${device.mobileL}, ${device.mobileM}, ${device.mobileS} {
@@ -100,12 +98,12 @@ const StyledVideo = styled.video`
 `
 
 
-const Projects = () => {
+const Projects = ({...props}) => {
 
     const [selectedId, setSelectedId] = useState(0)
 
     return (
-        <StyledProjects>
+        <StyledProjects {...props}>
         <StyledTitles>
         <h1>Qué he construido</h1>
                 <p>Estos son algunos proyectos personales que he desarrollado <span>¡Haz click en cualquiera para ver más información!</span></p>

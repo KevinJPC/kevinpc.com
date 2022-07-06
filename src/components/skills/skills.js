@@ -19,8 +19,6 @@ import ReactTooltip from 'react-tooltip';
 import { device } from "@components/mediaqueries";
 
 const StyledSkills = styled.div`
-    min-height: calc(100vh - 4.4em);
-    height: auto;
     width: 100%;
 
     /* media queries */
@@ -72,10 +70,10 @@ const Technologies = styled.div`
 
 
 
-const Skills = () => {
+const Skills = ({...props}) => {
 
     return (
-        <StyledSkills>
+        <StyledSkills {...props}>
             <h1>Qué puedo hacer</h1>
             <p>Estas son algunas de las tecnologías y herramientas que he estado utilizando recientemente y con las que puedo construir el frontend y/o backend de aplicaciones web:</p>
             <Technologies>

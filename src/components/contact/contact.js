@@ -64,7 +64,7 @@ const StyledButton = styled.div`
 }
 `
 
-const Contact = () => {
+const Contact = ({...props}) => {
     return (
         <StyledContact>
             <Container>

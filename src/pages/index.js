@@ -60,42 +60,21 @@ const IndexPage = () => {
   }
 
   useEffect(() => {
-    // const setHeight = () => {
-    //   const vh = window.innerHeight * 0.01;
-    //   // Fixing 100vh for mobile
-    //   console.log(vh * 100)
-    //   document.documentElement.style.setProperty(`–-vh`, `${vh}px`);
-    // };
-
-    // // define mobile screen size:
-    // window.addEventListener("resize", setHeight);
-
-
     // define a function that sets min-height of my-element to window.innerHeight:
 
     const setHeight = () => {
       if(stateAnimation === 'idle'){
-        document.getElementById("hero").style.minHeight = (window.innerHeight - 70.4) + 'px'
+        document.getElementById("hero").style.minHeight = (window.innerHeight - 70.4) + 'px';
+        document.getElementById("about").style.minHeight = (window.innerHeight - 70.4) + 'px';
+        document.getElementById("skills").style.minHeight = (window.innerHeight - 70.4) + 'px';
+        document.getElementById("projects").style.minHeight = (window.innerHeight - 70.4) + 'px';
       }else {
-        document.getElementById("hero").style.minHeight = window.innerHeight + 'px'
+        document.getElementById("hero").style.minHeight = window.innerHeight + 'px';
       }
     };
 
     // define mobile screen size:
-
-    let deviceWidth = window.matchMedia("(max-width: 1024px)");
-
-    if (deviceWidth.matches) {
-      // // set an event listener that detects when innerHeight changes:
-
-      // window.addEventListener("resize", setHeight);
-
-      // call the function once to set initial height:
-
       setHeight();
-    }
-
-
 
     if (heroInView) setSection(sections.hero.url)
     if (aboutInView) setSection(sections.about.url)
@@ -124,10 +103,10 @@ const IndexPage = () => {
           <section ref={heroRef}><Hero id="hero" setStateAnimation={setStateAnimation} stateAnimation={stateAnimation} /></section>
           {stateAnimation === 'idle' ? (
             <>
-              <motion.section id="about" ref={aboutRef}><Reveal inView={aboutInView}><About /></Reveal></motion.section>
-              <motion.section id="skills" ref={skillsRef}><Reveal inView={skillsInView}><Skills /></Reveal></motion.section>
-              <motion.section id="projects" ref={projectsRef}><Reveal inView={projectsInView}><Projects /></Reveal></motion.section>
-              <motion.section id="contact" ref={contactRef}><Reveal inView={contactInView}><Contact /></Reveal></motion.section>
+              <motion.section ref={aboutRef}><Reveal inView={aboutInView}><About id="about"/></Reveal></motion.section>
+              <motion.section ref={skillsRef}><Reveal inView={skillsInView}><Skills id="skills"/></Reveal></motion.section>
+              <motion.section ref={projectsRef}><Reveal inView={projectsInView}><Projects id="projects"/></Reveal></motion.section>
+              <motion.section ref={contactRef}><Reveal inView={contactInView}><Contact id="contact"/></Reveal></motion.section>
             </>
           ) : null}
         </ContainerSection>

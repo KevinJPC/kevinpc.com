@@ -6,9 +6,6 @@ import { device } from "@components/mediaqueries";
 
 const StyledAbout = styled.div`
 
-    min-height: calc(100vh - 4.4em);
-    height: auto;
-
     /* media queries */
     @media ${device.mobileL}, ${device.mobileM}, ${device.mobileS} {
         margin-bottom: 4em;
@@ -80,9 +77,9 @@ const StyledImg = styled.div`
     }
 `
 
-const About = () => {
+const About = ({...props}) => {
     return (
-        <StyledAbout>
+        <StyledAbout {...props}>
             <h1>Quién soy</h1>
             <Container>
                 <StyledParagraph>
