@@ -17,7 +17,6 @@ const GlobalStyle = createGlobalStyle`
     html {
         scroll-behavior: smooth;
         scroll-padding-top: 4.4em;
-        min-height: -webkit-fill-available;
     }
 
     /* ===== Scrollbar CSS ===== */
