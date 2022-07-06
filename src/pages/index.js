@@ -60,10 +60,17 @@ const IndexPage = () => {
   }
 
   useEffect(() => {
-    // Fixing 100vh for mobile
-    let vh = window.innerHeight * 0.01;
-    console.log(vh)
-    document.documentElement.style.setProperty(`–-vh`, `${vh}px`);
+    const setHeight = () => {
+      const vh = window.innerHeight * 0.01;
+      // Fixing 100vh for mobile
+      console.log(vh * 100)
+      document.documentElement.style.setProperty(`–-vh`, `${vh}px`);
+    };
+
+    // define mobile screen size:
+    window.addEventListener("resize", setHeight);
+
+
 
     if (heroInView) setSection(sections.hero.url)
     if (aboutInView) setSection(sections.about.url)
@@ -82,7 +89,7 @@ const IndexPage = () => {
       >
         {stateAnimation === 'idle' ? (
           <>
-            <Navbar section={section} setSection={setSection}/>
+            <Navbar section={section} setSection={setSection} />
             <SocialBar />
             <SectionBar section={section} setSection={setSection} />
           </>
@@ -91,13 +98,13 @@ const IndexPage = () => {
         <ContainerSection stateAnimation={stateAnimation}>
           <section id="hero" ref={heroRef}><Hero setStateAnimation={setStateAnimation} stateAnimation={stateAnimation} /></section>
           {stateAnimation === 'idle' ? (
-          <>
-          <motion.section id="about" ref={aboutRef}><Reveal inView={aboutInView}><About /></Reveal></motion.section>
-          <motion.section id="skills" ref={skillsRef}><Reveal inView={skillsInView}><Skills /></Reveal></motion.section>
-          <motion.section id="projects" ref={projectsRef}><Reveal inView={projectsInView}><Projects /></Reveal></motion.section>
-          <motion.section id="contact" ref={contactRef}><Reveal inView={contactInView}><Contact /></Reveal></motion.section>
-          </>
-        ) : null}
+            <>
+              <motion.section id="about" ref={aboutRef}><Reveal inView={aboutInView}><About /></Reveal></motion.section>
+              <motion.section id="skills" ref={skillsRef}><Reveal inView={skillsInView}><Skills /></Reveal></motion.section>
+              <motion.section id="projects" ref={projectsRef}><Reveal inView={projectsInView}><Projects /></Reveal></motion.section>
+              <motion.section id="contact" ref={contactRef}><Reveal inView={contactInView}><Contact /></Reveal></motion.section>
+            </>
+          ) : null}
         </ContainerSection>
         {stateAnimation === 'idle' ? (
           <Footer />
