@@ -24,7 +24,7 @@ const StyledTitles = styled.div`
     h1 {
         color: ${siteData.colors.white};
         font-size: calc(1.1em + 1vw);
-        margin-bottom: 1em;
+        margin: 1em 0;
     }
 
     p {

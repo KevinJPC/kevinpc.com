@@ -15,7 +15,7 @@ const StyledContact = styled.div`
     h1 {
         font-size: calc(1.1em + 1vw);
         color: ${siteData.colors.white};
-        margin-bottom: 1em;
+        margin: 1em 0;
     }
 
     p {
@@ -66,7 +66,7 @@ const StyledButton = styled.div`
 
 const Contact = ({...props}) => {
     return (
-        <StyledContact>
+        <StyledContact {...props}>
             <Container>
                 <h1>Contáctame</h1>
                 <p>
