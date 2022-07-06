@@ -6,6 +6,7 @@ const GlobalStyle = createGlobalStyle`
     * {
         padding: 0;
         margin: 0;
+        border: 0;
         box-sizing: border-box;
         font-family: 'Dosis', sans-serif;
     }
@@ -17,6 +18,7 @@ const GlobalStyle = createGlobalStyle`
     html {
         scroll-behavior: smooth;
         scroll-padding-top: 4.4em;
+        height: 100%;
     }
 
     /* ===== Scrollbar CSS ===== */
