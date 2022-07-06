@@ -63,7 +63,7 @@ const IndexPage = () => {
     // Fixing 100vh for mobile
     let vh = window.innerHeight * 0.01;
     console.log(vh)
-    document.documentElement.style.setProperty(`–vh`, `${vh}px`);
+    document.documentElement.style.setProperty(`–-vh`, `${vh}px`);
 
     if (heroInView) setSection(sections.hero.url)
     if (aboutInView) setSection(sections.about.url)
