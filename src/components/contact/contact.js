@@ -5,7 +5,7 @@ import { device } from "@components/mediaqueries";
 
 const StyledContact = styled.div`
     height: calc(100vh - 5em);
-
+    border: 1px solid red;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -15,7 +15,7 @@ const StyledContact = styled.div`
     h1 {
         font-size: calc(1.1em + 1vw);
         color: ${siteData.colors.white};
-        margin: 1em 0;
+        margin-bottom: 1em;
     }
 
     p {
