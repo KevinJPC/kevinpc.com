@@ -9,6 +9,7 @@ const StyledHero = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
+    border: 1px solid red;
 `
 
 const Container = styled.div`
