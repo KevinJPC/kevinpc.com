@@ -60,15 +60,36 @@ const IndexPage = () => {
   }
 
   useEffect(() => {
+    // const setHeight = () => {
+    //   const vh = window.innerHeight * 0.01;
+    //   // Fixing 100vh for mobile
+    //   console.log(vh * 100)
+    //   document.documentElement.style.setProperty(`–-vh`, `${vh}px`);
+    // };
+
+    // // define mobile screen size:
+    // window.addEventListener("resize", setHeight);
+
+
+    // define a function that sets min-height of my-element to window.innerHeight:
+
     const setHeight = () => {
-      const vh = window.innerHeight * 0.01;
-      // Fixing 100vh for mobile
-      console.log(vh * 100)
-      document.documentElement.style.setProperty(`–-vh`, `${vh}px`);
+      document.getElementById("my-element").style.minHeight = window.innerHeight + "px"
     };
 
     // define mobile screen size:
-    window.addEventListener("resize", setHeight);
+
+    let deviceWidth = window.matchMedia("(max-width: 1024px)");
+
+    if (deviceWidth.matches) {
+      // set an event listener that detects when innerHeight changes:
+
+      window.addEventListener("resize", setHeight);
+
+      // call the function once to set initial height:
+
+      setHeight();
+    }
 
 
 
