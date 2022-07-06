@@ -75,8 +75,8 @@ const IndexPage = () => {
 
     const setHeight = () => {
       if(stateAnimation === 'idle'){
-        document.getElementById("hero").style.minHeight = (window.innerHeight - 70.4) + 'px'
-      }else {
+      //   document.getElementById("hero").style.minHeight = (window.innerHeight - 70.4) + 'px'
+      // }else {
         document.getElementById("hero").style.minHeight = window.innerHeight + 'px'
       }
     };
