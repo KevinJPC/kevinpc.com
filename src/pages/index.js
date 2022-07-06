@@ -120,7 +120,7 @@ const IndexPage = () => {
           <section id="hero" ref={heroRef}><Hero setStateAnimation={setStateAnimation} stateAnimation={stateAnimation} /></section>
           {stateAnimation === 'idle' ? (
             <>
-              <motion.section ref={aboutRef}><Reveal inView={aboutInView}><About id="about"/></Reveal></motion.section>
+              <motion.section id="about" ref={aboutRef}><Reveal inView={aboutInView}><About id="about"/></Reveal></motion.section>
               <motion.section id="skills" ref={skillsRef}><Reveal inView={skillsInView}><Skills /></Reveal></motion.section>
               <motion.section id="projects" ref={projectsRef}><Reveal inView={projectsInView}><Projects /></Reveal></motion.section>
               <motion.section id="contact" ref={contactRef}><Reveal inView={contactInView}><Contact /></Reveal></motion.section>

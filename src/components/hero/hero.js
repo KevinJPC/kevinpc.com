@@ -10,7 +10,7 @@ const StyledHero = styled.div`
     /* height: -moz-available;         
     height: -webkit-fill-available;  
     height: fill-available; */
-
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
