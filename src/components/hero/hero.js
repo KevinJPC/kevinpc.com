@@ -5,8 +5,8 @@ import { motion } from "framer-motion"
 import Animation from "@components/animation"
 
 const StyledHero = styled.div`
-    min-height: ${props => props.stateAnimation === 'idle' ? 'calc(100vh - 4.4em)' : '100vh'};
-    
+    height: ${props => props.stateAnimation === 'idle' ? 'calc(100vh - 4.4em)' : '100vh'};
+
     min-height: -moz-available;          /* WebKit-based browsers will ignore this. */
     min-height: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
     min-height: fill-available;
