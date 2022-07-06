@@ -17,7 +17,7 @@
             "url": "/#projects"
         },
         "contact": {
-            "name": "Contactame",
+            "name": "Contáctame",
             "url": "/#contact"
         }
     },
@@ -56,17 +56,18 @@
     },
     "projects": [
     {
-        "demo": "/videos/billing-website-demo.mp4", "name": "Aplicación web de facturación", "description": "Permite a los usuarios de una empresa ficticia iniciar sesión, gestionar la facturación de productos, listar las facturas realizadas y cambiar su estado del pago, además de simular la consulta de disponibilidad de un producto.", 
+        "demo": "/videos/portfolio-demo.mp4", "name": "Portafolio personal", "description": "Un sitio web de mi portafolio personal con un estilo “single-page” totalmente responsivo donde me presento, muestro mis habilidades, algunos proyectos y como contáctarme.", 
+        "technologies": "Construido con React, Gatsby, Styled Components, Framer Motion y Rive.", "url": "https://kevinpc.com", "repository": "https://github.com/KevinJPC/kevinpc.com"
+    },
+    {
+        "demo": "/videos/billing-website-demo.mp4", "name": "Aplicación web de facturación", "description": "Permite a los usuarios de una empresa ficticia iniciar sesión, gestionar la facturación de productos, listar las facturas realizadas y cambiar su estado de pago, además de simular la consulta de disponibilidad de un producto.", 
         "technologies": "Construido con React, Redux, Redux toolkit, Bootstrap y Strapi.", "url": "https://distribuciones-nacionales.netlify.app/", "repository": "https://github.com/KevinJPC/billing-website"
     },
     {
-        "demo": "/videos/star-wars-api-demo.mp4", "name": "API de Star Wars", "description": "API web que permite a los usuarios registrarse, iniciar sesión, consultar información de planetas y personajes de la saga, previamente creados, y agregar o eliminar estos de favoritos.", 
+        "demo": "/videos/star-wars-api-demo.mp4", "name": "API de Star Wars", "description": "API web que permite a los usuarios registrarse, iniciar sesión, consultar información de planetas y personajes de la saga previamente creados, y agregar o eliminar estos de favoritos.", 
         "technologies": "Construido con Python, Flask y SQLAlchemy.", "url": "https://star-wars-api2.herokuapp.com", "repository": "https://github.com/KevinJPC/star-wars-api"
-    },
-    {
-        "demo": "/videos/portfolio-demo.mp4", "name": "Aplicación web de facturación", "description": "Permite a los usuarios de una empresa ficticia iniciar sesión, gestionar la facturación de productos, listar las facturas realizadas y cambiar su estado del pago, además de simular la consulta de disponibilidad de un producto.", 
-        "technologies": "Construido con React, Redux, Redux toolkit, Bootstrap y Strapi.", "url": "https://distribuciones-nacionales.netlify.app/", "repository": "https://github.com/KevinJPC/billing-website"
     }
+
     ],
     "contact": {
         "description": "Actualmente estoy buscando nuevas oportunidades. Así que si tienes alguna pregunta, puedes contactarme en mis redes sociales o enviarme un mensaje."

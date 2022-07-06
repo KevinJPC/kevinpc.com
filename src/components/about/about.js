@@ -6,7 +6,7 @@ import { device } from "@components/mediaqueries";
 
 const StyledAbout = styled.div`
 
-    min-height: calc(100vh - 4em);
+    min-height: calc(100vh - 4.4em);
     height: auto;
 
     /* media queries */
@@ -22,6 +22,7 @@ const StyledAbout = styled.div`
 
     h1 {
         font-size: calc(1.1em + 1vw);
+        margin-bottom: 1em;
     }
 `
 
@@ -36,8 +37,6 @@ const Container = styled.div`
     @media ${device.mobileL}, ${device.mobileM}, ${device.mobileS} {
         flex-direction: column-reverse;
     }
-
-    margin-top: 2em;
 `
 
 const StyledParagraph = styled.div`
@@ -54,7 +53,7 @@ const StyledParagraph = styled.div`
         /* font-size: calc(0.1em + 1vw); */
         font-size: 1em;
         color: ${siteData.colors.gray};
-        margin-bottom: 1em;
+        margin-top: 1em;
         line-height: 1.5em;
         a{
             text-decoration: none;

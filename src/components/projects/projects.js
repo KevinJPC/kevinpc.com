@@ -7,7 +7,7 @@ import { device } from "@components/mediaqueries";
 
 
 const StyledProjects = styled.div`
-    min-height: calc(100vh - 4em);
+    min-height: calc(100vh - 4.4em);
     height: auto;
 
     /* media queries */
@@ -45,25 +45,16 @@ const Container = styled.div`
     display: flex;
 
     /* media queries */
-    @media ${device.desktop} {
+    @media ${device.desktop}, ${device.laptopL}, ${device.laptop}, ${device.tablet} {
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: center;
+        column-gap: 0.25em;
     }
 
     @media ${device.laptopL} {
-        flex-direction: row;
-        justify-content: space-between;
+        column-gap: 0.20em;
     }
 
-    @media ${device.laptop} {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    @media ${device.tablet} {
-        flex-direction: row;
-        justify-content: space-between;
-    }
 
     @media ${device.mobileL}, ${device.mobileM}, ${device.mobileS} {
         flex-direction: column;
@@ -71,8 +62,9 @@ const Container = styled.div`
     }
     flex-wrap: wrap;
     row-gap: 1em;
-
+    
     margin-top: 2em;
+
 `
 
 const StyledProject = styled.div`

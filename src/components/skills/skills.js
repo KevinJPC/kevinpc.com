@@ -19,7 +19,7 @@ import ReactTooltip from 'react-tooltip';
 import { device } from "@components/mediaqueries";
 
 const StyledSkills = styled.div`
-    min-height: calc(100vh - 4em);
+    min-height: calc(100vh - 4.4em);
     height: auto;
     width: 100%;
 

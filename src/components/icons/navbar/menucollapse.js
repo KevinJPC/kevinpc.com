@@ -1,5 +1,4 @@
 import React from "react";
-import StyledIcon from "@components/icons/styledicon";
 
 
 const MenuCollapse = () => {

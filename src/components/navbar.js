@@ -76,7 +76,7 @@ const ContainerLargeNav = styled.div`
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: 4em;
+    height: 4.4em;
     padding: 0 2em;
 `
 
@@ -99,7 +99,7 @@ const ContainerSmallNav = styled.div`
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: 4em;
+    height: 4.4em;
     padding: 0 2em;
 
     button {

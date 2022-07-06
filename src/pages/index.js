@@ -20,7 +20,6 @@ import Reveal from "@components/reveal"
 const sections = siteData.sections;
 
 const ContainerSection = styled.div`
-  /* width: 60%; */
 
   /* media queries */
   @media ${device.desktop} {
@@ -41,11 +40,8 @@ const ContainerSection = styled.div`
   @media ${device.mobileL}, ${device.mobileM}, ${device.mobileS} {
         width: 90%;
   }
-  margin: ${props => props.stateAnimation === 'idle' ? '4em' : '0'} auto;
+  margin: ${props => props.stateAnimation === 'idle' ? '4.4em' : '0'} auto;
 
-  section {
-    /* scroll-snap-align: start; */
-  }
 `
 
 const IndexPage = () => {

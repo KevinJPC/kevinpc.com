@@ -23,12 +23,20 @@ const StyledModalWrapper = styled.div`
 
 const StyledModalContent = styled.div`
 
-    @media ${device.desktop}, ${device.laptopL}, ${device.laptop}{
+    @media ${device.desktop}{
         width: 45%;
     }
 
+    @media ${device.laptopL}{
+        width: 60%;
+    }
+
+    @media ${device.laptop} {
+        width: 65%;
+    }
+
     @media ${device.tablet} {
-        width: 45%;
+        width: 80%;
     }
 
     @media ${device.mobileM}, ${device.mobileL}, ${device.mobileS} {
