@@ -167,9 +167,9 @@ const Navbar = ({ section, setSection }) => {
                         </StyledLogo>
 
                         <ul>
-                            <li><button onClick={() => document.getElementById(sections.about.url).scrollIntoView({behavior: 'smooth'})} active={section === sections.about.url ? true : false} >{sections.about.name}</button></li>
-                            <li><button onClick={() => document.getElementById(sections.skills.url).scrollIntoView({behavior: 'smooth'})} active={section === sections.skills.url ? true : false} >{sections.skills.name}</button></li>
-                            <li><button onClick={() => document.getElementById(sections.projects.url).scrollIntoView({behavior: 'smooth'})} active={section === sections.projects.url ? true : false} >{sections.projects.name}</button></li>
+                            <li><Anchor href={sections.about.url} active={section === sections.about.url ? true : false} >{sections.about.name}</Anchor></li>
+                            <li><Anchor href={sections.skills.url} active={section === sections.skills.url ? true : false} >{sections.skills.name}</Anchor></li>
+                            <li><Anchor href={sections.projects.url} active={section === sections.projects.url ? true : false} >{sections.projects.name}</Anchor></li>
                         </ul>
 
                         <div>

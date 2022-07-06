@@ -42,10 +42,6 @@ const ContainerSection = styled.div`
   }
   margin: ${props => props.stateAnimation === 'idle' ? '4.4em' : '0'} auto;
 
-  section {
-    border: 1px solid red;
-  }
-
 `
 
 const IndexPage = () => {
