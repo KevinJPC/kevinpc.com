@@ -75,8 +75,8 @@ const IndexPage = () => {
 
     const setHeight = () => {
       if(stateAnimation === 'idle'){
-      //   document.getElementById("hero").style.minHeight = (window.innerHeight - 70.4) + 'px'
-      // }else {
+        document.getElementById("hero").style.minHeight = (window.innerHeight - 70.4) + 'px'
+      }else {
         document.getElementById("hero").style.minHeight = window.innerHeight + 'px'
       }
     };
@@ -86,9 +86,9 @@ const IndexPage = () => {
     let deviceWidth = window.matchMedia("(max-width: 1024px)");
 
     if (deviceWidth.matches) {
-      // set an event listener that detects when innerHeight changes:
+      // // set an event listener that detects when innerHeight changes:
 
-      window.addEventListener("resize", setHeight);
+      // window.addEventListener("resize", setHeight);
 
       // call the function once to set initial height:
 
