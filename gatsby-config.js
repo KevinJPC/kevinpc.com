@@ -3,7 +3,7 @@ const path = require('path');
 module.exports = {
   siteMetadata: {
     title: `Kevin Pitti Castro`,
-    siteUrl: `https://www.kevinpc.dev`,
+    siteUrl: `https://www.kevinpc.com`,
     description: ``
   },
   plugins: ["gatsby-plugin-styled-components", {
