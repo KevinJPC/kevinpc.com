@@ -5,8 +5,8 @@ import { motion } from "framer-motion"
 import Animation from "@components/animation"
 
 const StyledHero = styled.div`
-    height: ${props => props.stateAnimation === 'idle' ? 'calc(100vh - 4.4em)' : '100vh'};
-    height: -webkit-fill-available;
+    min-height: ${props => props.stateAnimation === 'idle' ? 'calc(100vh - 4.4em)' : '100vh'};
+    min-height: -webkit-fill-available;
     display: flex;
     flex-direction: column;
     justify-content: center;
