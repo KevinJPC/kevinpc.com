@@ -17,7 +17,6 @@ const StyledAnimation = styled.div`
     }
 
     @media ${device.mobileL}, ${device.mobileM}, ${device.mobileS} {
-
         height: 19em;
     }
 `
@@ -77,7 +76,8 @@ const Animation = ({ setStateAnimation }) => {
                 }, 150)
             }
         };
-        window.addEventListener('mousemove', handleMouseMove);
+        
+        if (maxWidth > 768) window.addEventListener('mousemove', handleMouseMove);
 
         return () => {
             window.addEventListener('mousemove', handleMouseMove);

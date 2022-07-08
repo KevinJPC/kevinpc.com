@@ -19,19 +19,16 @@ const Nav = styled.nav`
         list-style: none;
     }
     
-    background-color: rgba(rgba(0, 0, 0, 0.5));
     z-index: 2;
 
     /* When scroll is on top hide */
     ${props => (props.isOnTop === false && props.menuIsCollapse) ?
         'box-shadow: inset 0 -1px 0 0 hsla(0,0%,100%,.2);'
         : null}
-
-    ${props => (!props.menuIsCollapse) ?
-        'background: rgba(0,0,0,0.7);'
-        : null};
-
+        
     transition: background 0.2s ease-in;
+
+    background: ${props => !props.menuIsCollapse ? 'rgba(0,0,0,0.7)' : 'rgba(rgba(0, 0, 0, 0.5))'};
 
     -webkit-backdrop-filter: blur(20px);
     backdrop-filter: blur(20px);
@@ -128,7 +125,7 @@ const ContainerSections = styled.div`
 
 const sections = siteData.sections;
 
-const Navbar = ({ section, setSection }) => {
+const Navbar = ({ section }) => {
 
     const [isOnTop, setIsOnTop] = useState(true);
     const [menuIsCollapse, setMenuIsCollapse] = useState(true);

@@ -75,7 +75,7 @@ const Skills = ({...props}) => {
     return (
         <StyledSkills {...props}>
             <h1>Qué puedo hacer</h1>
-            <p>Estas son algunas de las tecnologías y herramientas que he estado utilizando recientemente y con las que puedo construir el frontend y/o backend de aplicaciones web:</p>
+            <p>Estas son algunas de las tecnologías y herramientas que he estado utilizando recientemente:</p>
             <Technologies>
                 <div data-tip="HTML5">
                     <HtmlIcon />

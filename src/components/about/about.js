@@ -86,7 +86,7 @@ const About = ({...props}) => {
                     <p>
                         ¡Hola de nuevo! Como lo mencioné antes mi nombre es Kevin.
                         Actualmente estoy estudiando informática empresarial en la <a href="https://www.ucr.ac.cr/" target="_blank" rel="noreferrer">Universidad de Costa Rica</a>.
-                        También me gradué de <a href="https://4geeksacademy.com/" target="_blank" rel="noreferrer">4Geeks Academy</a> como desarrollador de software full stack
+                        También me gradué de <a href="https://4geeksacademy.com/" target="_blank" rel="noreferrer">4Geeks Academy</a> como desarrollador de software full stack.
                     </p>
                     <p>
                         Me he enfocado en prepararme para trabajar principalmente en el frontend pero también en el backend con algunas de las tecnologías y herramientas más utilizadas en la actualidad.

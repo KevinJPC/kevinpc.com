@@ -3,13 +3,13 @@ const path = require('path');
 module.exports = {
   siteMetadata: {
     title: `Kevin Pitti Castro`,
-    siteUrl: `https://www.kevinpc.com`,
-    description: ``
+    siteUrl: `https://kevinpc.com`,
+    description: `Kevin es un un desarrollador web enfocado en trabajar principalmente en el frontend pero también el backend de aplicaciones web. Amante de la tecnología.`
   },
   plugins: ["gatsby-plugin-styled-components", {
     resolve: 'gatsby-plugin-google-analytics',
     options: {
-      "trackingId": "UA-"
+      "trackingId": "G-9TLRW87B6J"
     }
   }, "gatsby-plugin-image", "gatsby-plugin-react-helmet", "gatsby-plugin-sitemap", {
       resolve: 'gatsby-plugin-manifest',
