@@ -96,7 +96,7 @@ const IndexPage = () => {
         <meta name="keywords" content="Web, Desarrollador, Frontend, Backend" />
         <meta name="author" content="Kevin Pitti Castro" />
         <title>Kevin Pitti Castro | Desarrollador web</title>
-        <link rel="canonical" href="http://kevinpc.com" />
+        <link rel="canonical" href="https://kevinpc.com" />
       </Helmet>
       <motion.div
         initial="hidden"
