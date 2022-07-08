@@ -2,9 +2,9 @@ const path = require('path');
 
 module.exports = {
   siteMetadata: {
-    title: `Kevin Pitti Castro`,
-    siteUrl: `https://kevinpc.com`,
-    description: `Kevin es un un desarrollador web enfocado en trabajar principalmente en el frontend pero también el backend de aplicaciones web. Amante de la tecnología.`
+    title: 'Kevin Pitti Castro',
+    siteUrl: 'https://kevinpc.com',
+    description: 'Kevin es un un desarrollador web enfocado en trabajar principalmente en el frontend pero también el backend de aplicaciones web. Amante de la tecnología.'
   },
   plugins: [
     {
