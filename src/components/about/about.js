@@ -98,7 +98,7 @@ const About = ({...props}) => {
                 </StyledParagraph>
 
                 <StyledImg>
-                    <StaticImage src='./../../images/personal-photo.jpg' layout="fullWidth" alt="Kevin's photo" />
+                    <StaticImage src='./../../images/personal-photo.jpg' layout="fullWidth" alt="Kevin" />
                 </StyledImg>
             </Container>
         </StyledAbout>

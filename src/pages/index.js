@@ -16,7 +16,7 @@ import Contact from "@components/contact/contact"
 import Footer from "@components/footer"
 import { device } from "@components/mediaqueries";
 import Reveal from "@components/reveal"
-import { Helmet } from "react-helmet"
+import Meta from "@components/meta"
 
 
 const sections = siteData.sections;
@@ -62,7 +62,6 @@ const IndexPage = () => {
   }
 
   useEffect(() => {
-    // define a function that sets min-height of my-element to window.innerHeight:
 
     const setHeight = () => {
       if (stateAnimation === 'idle') {
@@ -75,7 +74,6 @@ const IndexPage = () => {
       }
     };
 
-    // define mobile screen size:
     setHeight();
   }, [stateAnimation])
 
@@ -90,14 +88,7 @@ const IndexPage = () => {
 
   return (
     <Layout>
-      <Helmet>
-        <meta charSet="utf-8" />
-        <meta name="description" content="Kevin es un un desarrollador web enfocado en trabajar principalmente en el frontend pero también el backend de aplicaciones web. Amante de la tecnología." />
-        <meta name="keywords" content="Web, Desarrollador, Frontend, Backend" />
-        <meta name="author" content="Kevin Pitti Castro" />
-        <title>Kevin Pitti Castro | Desarrollador web</title>
-        <link rel="canonical" href="https://kevinpc.com" />
-      </Helmet>
+      <Meta />
       <motion.div
         initial="hidden"
         animate="visible"
